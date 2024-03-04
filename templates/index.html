@@ -4,9 +4,21 @@
         <title>News Scraper</title>
     </head>
     <body>
-        <h1>Guardian Headlines</h1>
-        {% for headline in headlines %}
-            <h2>{{ headline }}</h2>
+        <h2>APNews Headlines</h2>
+        {% for headline in apnews_headlines %}
+            <h3>{{ headline }}</h3>
+        {% endfor %}
+        <h2>Reuters Headlines</h2>
+        {% for headline in reuters_headlines %}
+            <h3>{{ headline }}</h3>
+        {% endfor %}
+        <h2>Bloomberg Headlines</h2>
+        {% for headline in bloomberg_headlines %}
+            <h3>{{ headline }}</h3>
+        {% endfor %}
+        <h2>The Guardian Headlines</h2>
+        {% for headline in theguardian_headlines %}
+            <h3>{{ headline }}</h3>
         {% endfor %}
     </body>
 </html>
